@@ -3,28 +3,25 @@
 <head>
     <title>Catalog | Bahumati</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
+    <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <meta name="author" content="Veronica Tanukula">
 
-    <!--JavaScript code for the slideshow-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-G-VLHQQ20B2C"></script>
     <script>
-        function createCarousel(images, id) {
-            var time = 20;
-            var i = 0;
-            var carousel = document.getElementById(id);
-            function changeImg() {
-                carousel.querySelector("img").setAttribute("src", images[i]);
-                i = (i + 1) % images.length;
-                setTimeout(changeImg, time);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
         }
-
-            window.onload = changeImg;
-        }</script>
+        gtag('js', new Date());
+        gtag('config', 'UA-G-VLHQQ20B2C');
+    </script>
 </head>
 <body>
     <header id="header">

@@ -3,63 +3,48 @@
 <head>
     <title>About Us | Bahumati</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
-    <!---->
+    <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <meta name="author" content="Veronica Tanukula">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-G-VLHQQ20B2C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-G-VLHQQ20B2C');
+    </script>
+    
+    <!--style css for the page-->
     <style>
-        h1{
-            text-align: center;
-        }
-        p {
-            padding-left: 50px;
-            padding-right: 50px;
-            text-align: center;
-            line-height: 1.5;
-            word-spacing: 0.3em;
-        }
-        .mainAbout {
-            justify-content: center;
-            align-items: center;
-        }
-        .mainAbout ul {
-            padding-left: 50px;
-            padding-right: 50px;
-            line-height: 1.5;
-            word-spacing: 0.3em;
-        }
-        .mainAbout li {
-            padding-left: 10px;
-            padding-right: 50px;
-            line-height: 1.5;
-            word-spacing: 0.2em;
-        }
-        .mid {
-            display: block;
-            margin: 0 auto;
-        }
-        .mainAbout {
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .image-with-text {
-            height: 100vh;
-            color: #ffc06d;
+        .two-column-container {
             display: flex;
-            align-items: center;
+            justify-content: space-between;
         }
-        .image-with-text img {
-            max-width: auto;
-            margin-right: 10px;
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+        .image-column img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <header id="header">
-        <div class="logo">
+        <div class="logo" style="position: center;">
             <img src="Images/Logo.png" height="100" width="100" alt="logo">
         </div>
-
+        <!--navbar-->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -79,14 +64,13 @@
     <main>
         <!--<div class="brandImg">
             <img src="Images/Logo.png" height="500" width="500" alt="logo" class="mid">-->
-
-            <div class="image-with-text">
-                <img src="Images/Logo.png"alt="logo" class="mid">
-                <h1>
-                About Us
-                </h1>
-                <p class="intro">
-                    Bahumati (n. bahu-mathi), offers unique presents at an affordable price.
+        <div class="two-column-container">
+            <div class="column image-column">
+                <img src="Images/Logo.png"height="400" width="400"alt="logo">
+            </div>
+            <div class="column text-column">
+                <h1 style="text-align: center">About Us</h1>           
+                <p >Bahumati (n. bahu-mathi), offers unique presents at an affordable price.
                     Exchanging gifts is a symbol of affection and has always been exciting for both
                     guests and hosts on special occasions and festivals. Many traditional events include
                     giving a party favor bag to every visitor who attends the ceremonies. Bahumati offers many
@@ -94,9 +78,28 @@
                     traditional Indian gifts and handicrafts delivered from artisans to your doorstep.
                     We provide the widest platform for handicraft items to assist local craftsmen in the
                     pursuit of business. Lounge andexperience stress-free shopping with us, where
-                    gifting is made easy in just a few clicks!
-                </p>
+                    gifting is made easy in just a few clicks!</p>
             </div>
+            </div>
+        </div>
+
+        <div class="image-with-text">
+            <img src="Images/Logo.png"height="400" width="400"alt="logo" class="mid">
+            <h1>
+                About Us
+            </h1>           
+            <p class="intro">
+                Bahumati (n. bahu-mathi), offers unique presents at an affordable price.
+                Exchanging gifts is a symbol of affection and has always been exciting for both
+                guests and hosts on special occasions and festivals. Many traditional events include
+                giving a party favor bag to every visitor who attends the ceremonies. Bahumati offers many
+                return gift options that suit you. We strive to deliver a  variety of hand-picked selections of
+                traditional Indian gifts and handicrafts delivered from artisans to your doorstep.
+                We provide the widest platform for handicraft items to assist local craftsmen in the
+                pursuit of business. Lounge andexperience stress-free shopping with us, where
+                gifting is made easy in just a few clicks!
+            </p>
+        </div>
         <!--</div>-->
         <div class="mainAbout">
             <h1>
