@@ -1,4 +1,10 @@
-﻿/*Color Coding
+﻿/* This file holds the style settings for the website. 
+These are the settings that are constant and consistent throughout the website. 
+
+These settings include:
+fonts, colors, margins, paddinf etc
+
+Color Coding
  *
  *garnet - #651616
  *text yellow - #ffc06d
@@ -6,10 +12,11 @@
  *
 */
 
-
+html{
+    font-family: 'Vesper Libre', serif;
+}
 head {
     background-color: #651616;
-    font-family: 'Vesper Libre', serif;
     color: #ffc06d;
     margin: left 50px;
     margin-right: 50px;
@@ -27,7 +34,6 @@ body {
     font-size: 16px;
 }
 footer {
-    font-family: 'Vesper Libre', serif;
     color: #ffc06d;
     bottom: 0;
     margin: left 50px;
@@ -36,7 +42,6 @@ footer {
 }
 nav {
     margin-left: auto;
-    font-family: 'Vesper Libre', serif;
     font-size: 20px;
     font-weight: bold;
 }
