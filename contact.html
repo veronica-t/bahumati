@@ -7,7 +7,7 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="style/form.css">
     <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
@@ -23,12 +23,31 @@
         gtag('js', new Date());
         gtag('config', 'UA-G-VLHQQ20B2C');
     </script>
+    <script>
+        // script.js
+    const toggleButton = document.getElementById("toggleNav");
+    const navList = document.getElementById("navList");
+
+    toggleButton.addEventListener("click", function() {
+        navList.classList.toggle("show");
+        });
+
+    </script>
 </head>
 
 <body>
     <header id="header">
         <div class="logo">
             <img src="Images/Logo.png" height="150" width="150" alt="logo">
+        </div>
+        <div class="navbar">
+        <button id="toggleNav">Toggle Navigation</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collections.html" class="active">Catalog</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
         </div>
         <nav>
             <ul>
@@ -48,23 +67,23 @@
 
     <main>
     <h1>Contact Us</h1>
-    <p>Feel free to get in touch with us using the form below:</p>
+    <p>Feel free to get in touch with us using the form </p>
 
     <form action="submit_form.php" method="post">
         <!-- Name Input -->
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name" required>
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Full Name" required>
 
         <br>
 
         <!-- Email Input -->
-        <label for="email">Email: </label>
-        <input type="email" id="email" name="email" required>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
 
         <br>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+        <label for="message"></label>
+        <textarea id="message" name="message" rows="6" cols="40" placeholder="Message" required></textarea>
 
         <br>
 
@@ -72,11 +91,13 @@
         <input type="submit" value="Submit">
     </form>
 
+    </main>
+
     <!--Footer-->
     <footer>
         <p> &copy; Bahumati Gifting 2022 </p>
     </footer>
-    
-    </main>
+
 </body>
+
 </html>

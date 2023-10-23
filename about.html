@@ -6,7 +6,6 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
     <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
@@ -27,6 +26,7 @@
     <style>
         .two-column-container {
             display: flex;
+            align-content: center;
             justify-content: space-between;
         }
         .column {
@@ -36,13 +36,14 @@
         .image-column img {
             max-width: 100%;
             height: auto;
+            align-items: right;
         }
     </style>
 </head>
 <body>
     <header id="header">
         <div class="logo" style="position: center;">
-            <img src="Images/Logo.png" height="100" width="100" alt="logo">
+            <img src="Images/Logo.png" height="150" width="150" alt="logo">
         </div>
         <!--navbar-->
         <nav>
@@ -65,11 +66,11 @@
         <!--<div class="brandImg">
             <img src="Images/Logo.png" height="500" width="500" alt="logo" class="mid">-->
         <div class="two-column-container">
-            <div class="column image-column">
+            <section class="column image-column">
                 <img src="Images/Logo.png"height="400" width="400"alt="logo">
-            </div>
-            <div class="column text-column">
-                <h1 style="text-align: center">About Us</h1>           
+            </section>
+            <section class="column text-column">
+                <h1 style="text-align: left">About Us</h1>           
                 <p >Bahumati (n. bahu-mathi), offers unique presents at an affordable price.
                     Exchanging gifts is a symbol of affection and has always been exciting for both
                     guests and hosts on special occasions and festivals. Many traditional events include
@@ -79,45 +80,12 @@
                     We provide the widest platform for handicraft items to assist local craftsmen in the
                     pursuit of business. Lounge andexperience stress-free shopping with us, where
                     gifting is made easy in just a few clicks!</p>
+            </section>
             </div>
-            </div>
-        </div>
-
-        <div class="image-with-text">
-            <img src="Images/Logo.png"height="400" width="400"alt="logo" class="mid">
-            <h1>
-                About Us
-            </h1>           
-            <p class="intro">
-                Bahumati (n. bahu-mathi), offers unique presents at an affordable price.
-                Exchanging gifts is a symbol of affection and has always been exciting for both
-                guests and hosts on special occasions and festivals. Many traditional events include
-                giving a party favor bag to every visitor who attends the ceremonies. Bahumati offers many
-                return gift options that suit you. We strive to deliver a  variety of hand-picked selections of
-                traditional Indian gifts and handicrafts delivered from artisans to your doorstep.
-                We provide the widest platform for handicraft items to assist local craftsmen in the
-                pursuit of business. Lounge andexperience stress-free shopping with us, where
-                gifting is made easy in just a few clicks!
-            </p>
         </div>
         <!--</div>-->
-        <div class="mainAbout">
-            <h1>
-                About Us
-            </h1>
-            <p class="intro">
-                Bahumati (n. bahu-mathi), offers unique presents at an affordable price.
-                Exchanging gifts is a symbol of affection and has always been exciting for both
-                guests and hosts on special occasions and festivals. Many traditional events include
-                giving a party favor bag to every visitor who attends the ceremonies. Bahumati offers many
-                return gift options that suit you. We strive to deliver a  variety of hand-picked selections of
-                traditional Indian gifts and handicrafts delivered from artisans to your doorstep.
-                We provide the widest platform for handicraft items to assist local craftsmen in the
-                pursuit of business. Lounge andexperience stress-free shopping with us, where
-                gifting is made easy in just a few clicks!
-            </p>
-
-            <h1>
+        <div class="mainAbout" >
+            <h1 style="text-align: center">
                 Shipping and Returns
             </h1>
             
@@ -125,14 +93,14 @@
                 <p>Contact Email Address: bahumati4u@gmail.com</p>
 
                 
-                <p>Return Policy:</p>
+                <p style="text-align: center">Return Policy:</p>
                 <ul>
                     
                     <li> All sales are final sales. Non-refundable and non-returnable.</li>
                     <li> Please reach out to us if there is any problem with your package.</li>
                 </ul>
 
-                <p>Shipping Policy:</p>
+                <p style="text-align: center">Shipping Policy: </p>
                 <ul>
                     
                     <li>All orders will be processed within 2-5 business days once we receive the order. You will receive an email once your order is shipped.</li>

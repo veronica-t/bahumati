@@ -6,14 +6,19 @@
  *
 */
 
-header {
-    display: flex;
-    align-items: center;
-}
+
 head {
     background-color: #651616;
     font-family: 'Vesper Libre', serif;
     color: #ffc06d;
+    margin: left 50px;
+    margin-right: 50px;
+}
+header {
+    display: flex;
+    align-items: center;
+    margin: left 50px;
+    margin-right: 50px;
 }
 body {
     background-color: #651616;
@@ -24,6 +29,10 @@ body {
 footer {
     font-family: 'Vesper Libre', serif;
     color: #ffc06d;
+    bottom: 0;
+    margin: left 50px;
+    margin-right: 50px;
+    
 }
 nav {
     margin-left: auto;
@@ -63,26 +72,4 @@ nav a {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-}
-.carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.carousel-container {
-    overflow: hidden;
-    position: relative;
-    width: 300px;
-    height: 200px;
-}
-.carousel-slide {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-.carousel-slide img {
-    width: 100%;
-    height: 100%;
-}
-#prevBtn, #nextBtn {
-    margin: 10px;
 }

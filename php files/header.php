@@ -20,8 +20,10 @@
 </head>
 <body>
 <header id="header">
-        <div class="logo">
-            <img src="Images/Logo.png" height="150" width="150" alt="logo">
+    <div class="logo">
+            <a href="index.html">
+            <img src="Images/Logo.png" height="100" width="100" alt="logo">
+        </a>
         </div>
         <nav>
             <ul>
