@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Vesper Libre';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./vesper-libre-v19-latin-regular.woff2') format('woff2'),
+       url('./vesper-libre-v19-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Vesper Libre';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./vesper-libre-v19-latin-500.woff2') format('woff2'),
+       url('./vesper-libre-v19-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Vesper Libre';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./vesper-libre-v19-latin-700.woff2') format('woff2'),
+       url('./vesper-libre-v19-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Vesper Libre';
+  font-style: normal;
+  font-weight: 900;
+  src: https://cdn3.editmysite.com/app/website/static/fonts/Vesper%20Libre/vesper-libre-v19-latin-regular.woff2url('./vesper-libre-v19-latin-900.woff2') format('woff2'),
+       url('./vesper-libre-v19-latin-900.woff') format('woff');
+}

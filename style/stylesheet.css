@@ -14,19 +14,20 @@ Color Coding
 
 html{
     font-family: 'Vesper Libre', serif;
+    margin-left: 200px;
+    margin-right: 200px;
 }
+
 head {
     background-color: #651616;
     color: #ffc06d;
-    margin: left 50px;
-    margin-right: 50px;
+    margin-left:  100px;
+    margin-right: 100px;
 }
 header {
     display: flex;
     align-items: center;
-    margin: left 50px;
-    margin-right: 50px;
-}
+}  
 body {
     background-color: #651616;
     font-family: 'Vesper Libre', serif;
@@ -36,8 +37,8 @@ body {
 footer {
     color: #ffc06d;
     bottom: 0;
-    margin: left 50px;
-    margin-right: 50px;
+    margin-left:  125px;
+    margin-right: 100px;
     
 }
 nav {
@@ -53,9 +54,11 @@ nav ul {
 nav li {
     margin-left: 20px;
 }
+/*animation for when cursor goes over a specific link, it highlightens*/
 nav li:hover {
     transform: scale(1.1);
 }
+/*navigation bar link*/
 nav a {
     color: #ffc06d;
     text-decoration: none;
