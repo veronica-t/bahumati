@@ -30,40 +30,41 @@
     </script>
 
 <style>
-    .product-card {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin: 10px;
-        padding: 10px;
-        width: 300px;
-        display: inline-block;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    h2{
+        text-align: center;
     }
-    .product-title {
-        font-size: 20px;
-        font-weight: bold;
+    p{
+        text-align: center;
     }
-    .product-description {
-        margin-top: 10px;
+    .category {
+        margin-bottom: 20px;
     }
-    .product-price {
-        margin-top: 10px;
-        font-size: 18px;
-        color: #007bff;
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;}
+    .image {
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
     }
 </style>
 
 <script src="javascript/carousel.js"></script>
 </head>
 <body>
-    <!--header for now..I'm trying to make a php file-->
     <header id="header">
-        <div class="logo">
-            <a href="index.html">
+        <div class="logo" style="position: center;">
             <img src="Images/Logo.png" height="150" width="150" alt="logo">
-        </a>
         </div>
-
+        <!--navbar-->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -79,54 +80,45 @@
             </ul>
         </nav>
     </header>
-
-    <br />
-
-    <!--This section is an image slide for the potli bags collection.-->
-    <section class="MK">
-        <script src="javascript/carousel.js"></script>
-        <h1>Potli Bags</h1>
-            <button id="prevBtn">Previous</button>
-            <div class="carousel-container">
-                <div class="carousel-slide" id="carouselSlide">
-                    <img src="Images/potli1.JPG" alt="Potli Bags">
-                    <img src="Images/potli2.JPG" alt="Potli Bags">
-                    <img src="Images/potli3.JPG.jpg" alt="Potil Bags">
-                    <!-- Add more images here -->
-                </div>
+    <!--header for now..I'm trying to make a php file-->
+    <div class="category">
+        <h2>Potli Bags</h2>
+        <p>Fill this pouch with chocolates, candy, dried fruits, and other favors, or use it to keep your valuables safe. This bag is gorgeous and perfect for gifting to yourself and friends.</p>
+        <div class="image-container">
+            <div class="image">
+                <img src="Images/potli1.JPG" alt="Potli Bag Image 1">
+                <h3>Polka Dots</h3>
             </div>
-            <button id="nextBtn">Next</button>
-        
-
-        <div>
-            <img src="Images/bbs1.jpeg" alt="Image 1">
-            <img src="Images/bbr.jpg" alt="Image 2">
-            <img src="Images/IMG_6348.jpg" alt="Image 3">
+            <div class="image">
+                <img src="Images/potli2.jpg" alt="Bandani Image 2">
+                <h3>Bandani Print</h3>
+            </div>
+            <div class="image">
+                <img src="Images/potli3.jpg" alt="Minakari Image 3">
+                <h3>Minakari</h3>
+            </div>
         </div>
-
-        <script>// Create the carousels
-            createCarousel(["bbs1.jpeg", "IMG_6318.jpg", "IMG_6348.jpg"], "carousel1");</script>
-    </section>
-
-    <br />
-
-    <div class="GS">
-        <h1>German Silver</h1>
-        <br />
-
-        <div class="carousel">
-            <img src="Images/IMG_6527.jpg" alt="Image 1">
-            <img src="Images/IMG_6318.jpg" alt="Image 2">
-            <img src="Images/IMG_6348.jpg" alt="Image 3">
+    </div>
+    <br>
+    <div class="category">
+        <h2>Bangle Boxes</h2>
+        <p>This stunning bright color potli box with golden zari work, is the finest choice for storing toiletries, earrings, bangles, and necklaces. Decorate your dressing area with this elegant utility box to draw the attention of your visitors.</p>
+        <div class="image-container">
+            <div class="image">
+                <img src="Images/bbb1.JPG" alt="Bangle Box Image1">
+                <h3>Big Bangle Box</h3>
+            </div>
+            <div class="image">
+                <img src="Images/bbr.JPG" alt="Bangle Box Image 2">
+                <h3>Round Bangle Box</h3>
+            </div>
+            <div class="image">
+                <img src="Images/bbs1.jpeg" alt="Bangle Box Image 3">
+                <h3>Small Bangle Box</h3>
+            </div>
         </div>
-
     </div>
-
-
-    <div class="HD">
-        <h1>Home Decor</h1>
-
-    </div>
+    <br>
 
     <footer>
         <p> &copy; Bahumati Gifting 2022 </p>
